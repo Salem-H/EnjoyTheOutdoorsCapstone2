@@ -1,0 +1,19 @@
+body {
+    background-color: skyblue;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a{
+    display: inline-block;
+    background-color: saddlebrown;
+    color: goldenrod;
+    margin: 0.5px;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+nav a.selected{
+    background-color: brown;
+    color: gold;
+}
