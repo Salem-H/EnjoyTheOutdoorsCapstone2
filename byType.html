@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js"></script>
+    <script src="./data/scripts/nationalParkData.js"></script>
+    <script src="./data/scripts/parkTypeData.js"></script>
+    <script src="./data/scripts/locationData.js"></script>
+    <script src="./scripts/parks_page.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <img src="./images/logo.png" alt="" id="logoimg">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="./parks.html">National Parks</a>
+                    <div class="dropdown">
+                        <a href="#">Find by Location</a>
+                        <a href="#">Find by Park Type</a>
+                        <a href="#">Find by Location and Type</a>
+                    </div>
+                </li>
+                <li><a href="./mountains.html">Mountains</a></li>
+                <li><a href="./review.html">Review</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+    </header>
+    <main>
+        <h1>Parks</h1>
+        <div class="filters">
+            <select name="parkTypeSelect" id="parkTypeSelect">
+                <option value="">Select a park type</option>
+            </select>
+            <select name="parkLocationSelect" id="parkLocationSelect">
+                <option value="">Select a park Location</option>
+            </select>
+            <button id="filterButton">Filter</button>
+        </div>
+        <div id="results"></div>
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: NationalPark@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <ul class="social-icons">
+            <li><a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a></li>
+            <li><a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a></li>
+            <li><a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a></li>
+            <li><a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a></li>
+            <li><a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a></li>
+        </ul>
+        <p>&copy; 2024 National Parks. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

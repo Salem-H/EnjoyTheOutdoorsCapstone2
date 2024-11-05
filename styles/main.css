@@ -93,8 +93,10 @@ footer {
     background-color: black;
  /* opacity: 50%; */
     color: white;
-    padding: 8px;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
+    position: relative;
 }
 .contact {
     margin-bottom: 10px;
