@@ -5,9 +5,11 @@ body {
     padding: 0;
 }
 
-#logoimg{
-    height: 120px;
-    width: 120px;
+#circle-logo {
+    width: 100px; /* Set the width */
+    height: 100px; /* Set the height (same as width for a perfect circle) */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the circle without stretching */
 }
 p{
     text-align: center;
