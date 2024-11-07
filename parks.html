@@ -18,16 +18,8 @@
         <nav>
             <ul class="nav-links">
                 <img id="circle-logo" src="./images/logo.png" alt="Cropped Circle Image">
-
                 <li><a href="./index.html">Home</a></li>
-                <li>
-                    <a href="#">National Parks</a>
-                    <div class="dropdown">
-                        <a href="./byLocation.html">Find by Location</a>
-                        <a href="./byType.html">Find by Park Type</a>
-                        <a href="./parks.html">Find by Location and Type</a>
-                    </div>
-                </li>
+                <li><a href="./parks.html">National Parks</a></li>
                 <li><a href="./mountains.html">Mountains</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
                 <li><a href="./review.html">Review</a></li>
@@ -41,27 +33,28 @@
     <main>
         <h1>Parks</h1>
         <div class="container">
+            <!-- Dropdowns for filtering -->
             <div class="filters">
                 <label for="parkTypeSelect">Park Type:</label>
                 <select id="parkTypeSelect">
-                    <option value="">All National Parks</option>
-                </select>
-
-                <label for="parkTypeSelect">Park Type:</label>
-                <select id="parkTypeSelect">
                     <option value="">Select a Park Type</option>
+                    <!-- Options will be added dynamically via JavaScript -->
                 </select>
     
                 <label for="parkLocationSelect">Location:</label>
                 <select id="parkLocationSelect">
                     <option value="">Select a Location</option>
+                    <!-- Options will be added dynamically via JavaScript -->
                 </select>
-    
-                <button id="filterButton">Apply Filters</button>
+                <button id="viewAllButton">View All National Parks</button>
             </div>
+    
+            <!-- Container for displaying filtered parks -->
             <div id="results" class="results-container">
+                <!-- Park results will be displayed here -->
             </div>
         </div>
+    
     </main>
     <footer>
         <div class="contact">

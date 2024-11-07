@@ -40,14 +40,6 @@ nav {
     color: white;
     text-decoration: none;
 }
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
 .nav-links li:hover .dropdown {
     display: block;
 }
@@ -71,7 +63,7 @@ nav {
 }
 .search-container button {
     padding: 5px 10px;
-    background-color: #555;
+    background-color: rgb(223, 107, 30);
     color: white;
     border: none;
     border-radius: 4px;
