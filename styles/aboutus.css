@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* About Us Section */
+#about-us {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about-us .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Mission and Vision */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+.mission h2, .vision h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    margin-top: 50px;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #7f8c8d;
+    max-width: 400px;
+}
+
+
+

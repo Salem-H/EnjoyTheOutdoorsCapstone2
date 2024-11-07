@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parks</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/parks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="./scripts/main.js"></script>
     <script src="./data/scripts/nationalParkData.js"></script>
     <script src="./data/scripts/parkTypeData.js"></script>
@@ -27,6 +29,7 @@
                     </div>
                 </li>
                 <li><a href="./mountains.html">Mountains</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
                 <li><a href="./review.html">Review</a></li>
             </ul>
         </nav>
@@ -37,16 +40,28 @@
     </header>
     <main>
         <h1>Parks</h1>
-        <div class="filters">
-            <select name="parkTypeSelect" id="parkTypeSelect">
-                <option value="">Select a park type</option>
-            </select>
-            <select name="parkLocationSelect" id="parkLocationSelect">
-                <option value="">Select a park Location</option>
-            </select>
-            <button id="filterButton">Filter</button>
+        <div class="container">
+            <div class="filters">
+                <label for="parkTypeSelect">Park Type:</label>
+                <select id="parkTypeSelect">
+                    <option value="">All National Parks</option>
+                </select>
+
+                <label for="parkTypeSelect">Park Type:</label>
+                <select id="parkTypeSelect">
+                    <option value="">Select a Park Type</option>
+                </select>
+    
+                <label for="parkLocationSelect">Location:</label>
+                <select id="parkLocationSelect">
+                    <option value="">Select a Location</option>
+                </select>
+    
+                <button id="filterButton">Apply Filters</button>
+            </div>
+            <div id="results" class="results-container">
+            </div>
         </div>
-        <div id="results"></div>
     </main>
     <footer>
         <div class="contact">
