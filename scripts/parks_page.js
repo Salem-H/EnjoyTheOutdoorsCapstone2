@@ -1,3 +1,4 @@
+
 function addPark(parkTypeName, parkTypeSelect) {
     parkTypeSelect.appendChild(new Option(parkTypeName));
 }
@@ -5,7 +6,6 @@ function addPark(parkTypeName, parkTypeSelect) {
 function addLocation(text, target) {
     target.appendChild(new Option(text));
 }
-
 function Park(parkObject) {
     const container = document.createElement("div");
     container.classList.add("park-container"); // A class for styling the container
@@ -19,13 +19,12 @@ function Park(parkObject) {
         <strong>City:</strong> ${parkObject.City}, <b> State: </b>${parkObject.State}, <b> ZipCode: </b> ${parkObject.ZipCode}
     `;
 
-    // "More Information" Button
     const moreInfoButton = document.createElement("button");
     moreInfoButton.classList.add("more-info-btn");
     moreInfoButton.textContent = "More Information";
     const moreInfoContainer = document.createElement("div");
     moreInfoContainer.classList.add("more-info");
-    moreInfoContainer.style.display = "none"; // Hidden by default
+    moreInfoContainer.style.display = "none"; 
 
     // Detailed Information (to be shown on button click)
     moreInfoContainer.innerHTML = `
@@ -33,7 +32,7 @@ function Park(parkObject) {
         <strong>Fax:</strong> ${parkObject.Fax}<br>
         <strong>Latitude:</strong> ${parkObject.Latitude.toFixed(3)}<br>
         <strong>Longitude:</strong> ${parkObject.Longitude.toFixed(3)}<br>
-         <strong>Visit Website:</strong> <a href="${parkObject.Visit}" target="_blank">Click here to visit</a>
+        <strong>Visit Website:</strong> <a class="btn" href="${parkObject.Visit}">Click here to visit</a>
     `;
 
     // Toggle visibility of the more info
@@ -67,6 +66,7 @@ function renderParks() {
 
     // Add parks to the results container
     if (filtered.length > 0) {
+        slideshow.style.display = "none";
         filtered.forEach(p => results.appendChild(Park(p)));
     } else {
         results.innerHTML = "No results found matching the filter.";
@@ -81,7 +81,7 @@ function clearForm() {
 
     // Clear the results container
     const results = document.getElementById("results");
-    results.innerHTML = ""; // Remove all previously displayed parks
+    results.innerHTML = ""; 
 }
 
 function onContent() {
@@ -94,7 +94,6 @@ function onContent() {
     locationsArray.forEach(parkLocationName => addLocation(parkLocationName, parkLocationSelect));
 
     // Event listeners for filtering and rendering parks
-    // allParks.addEventListener("click", renderParks);
     parkTypeSelect.addEventListener("change", renderParks);
     parkLocationSelect.addEventListener("change", renderParks);
 

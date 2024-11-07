@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <script src="./scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -45,22 +46,6 @@
         <img class="slides" src="./images/i.jpg" alt="Image 9">
         <img class="slides" src="./images/j2.jpg" alt="Image">
     </div>
-<script>
-    let slideIndex = 0;
-    const slides = document.getElementsByClassName("slides");
-
-    function showSlides() {
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex >= slides.length) { slideIndex = 0; }    
-        slides[slideIndex].style.display = "block";  
-        setTimeout(showSlides, 3000); // Change image every 3 seconds
-    }
-
-    showSlides(); // Start the slideshow
-</script>
 </body>
 <footer>
     <div class="contact">

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .then(response => response.json())
                 .then(data => {
                     if (data.status === "OK") {
-                        // Convert the sunrise and sunset times from UTC to local time
+                        // Convert the sunrise and sunset times 
                         const sunriseTime = new Date(data.results.sunrise);
                         const sunsetTime = new Date(data.results.sunset);
 
