@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -11,14 +12,17 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     text-align: center;
     color:  rgb(223, 107, 30);
 }
+
 label {
     display: block;
     margin: 15px 0 5px;
 }
+
 input[type="text"],
 textarea {
     width: 99%;
@@ -27,12 +31,15 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 textarea {
     resize: vertical;
 }
+
 input[type="file"] {
     margin: 15px 0;
 }
+
 button {
     background-color: rgb(223, 107, 30);;
     color: white;
@@ -42,6 +49,7 @@ button {
     cursor: pointer;
     width: 100%;
 }
+
 button:hover {
     background-color:orange;
 }
