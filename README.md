@@ -101,7 +101,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Authors
 
-- **Salem Hailemariam** - [YourGitHubProfile](https://github.com/Salem-H)
+- **Salem Hailemariam** - [https://github.com/Salem-H]
 
 ## Acknowledgements
 
