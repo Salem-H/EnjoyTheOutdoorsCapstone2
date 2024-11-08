@@ -82,6 +82,7 @@ function clearForm() {
     // Clear the results container
     const results = document.getElementById("results");
     results.innerHTML = ""; 
+    slideshow.style.display = "block";
 }
 
 function onContent() {

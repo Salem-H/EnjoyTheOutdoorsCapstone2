@@ -18,6 +18,7 @@ Welcome to the **National Parks and Mountains Guide**! This website helps you di
 - **CSS3** - For styling and layout of the website.
 - **JavaScript** - For interactive features and dynamic content (e.g., search filters, slideshow).
 - **GitHub** - For hosting the project repository.
+- **W3C Validation** - To validate .HTML and .CSS
 
 ## Screenshots
 
@@ -72,6 +73,27 @@ Make sure you have a modern web browser such as Chrome, Firefox, Safari, or Edge
 4. **Explore Further**: Click on the **More Information** button to view additional details like contact info, phone number, fax, and latitude/longitude.
 5. **Visit Official Park Websites**: If available, click on the **Visit Website** link to access official pages about the parks.
 
+## Interesting Code: Dynamic Slideshow
+```javascript
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slides");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;  // Loop back to the first slide
+    }
+    slides[slideIndex].style.display = "block";  // Show the current slide
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    showSlides(); 
+});
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
@@ -82,11 +104,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgements
 
-- **National Park Service** for providing open data on parks.
 - My instructor Kevin E Long for the support throuhout this project.
+- **National Park Service** for providing open data on parks.
 - **sunrise-sunset.org** used to fetch the sunset and sunrise time.
 - **cdnjs.cloudflare.com** for the social media icons.
+- **MDN Web Docs** for form/enctype to upload picture
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact us me [your-email@example.com](salemkassal@gmail.com).
+If you have any questions or suggestions, feel free to contact us me [salemkassal@gmail.com]
