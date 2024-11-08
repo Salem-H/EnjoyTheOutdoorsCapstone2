@@ -93,6 +93,7 @@ function showSlides() {
 document.addEventListener("DOMContentLoaded", function() {
     showSlides(); 
 });
+```
 
 ## License
 
