@@ -63,6 +63,11 @@ function renderParks() {
     if (selectedLocation) {
         filtered = filtered.filter(p => p.State.toLowerCase() === selectedLocation.toLowerCase());
     }
+    if(searchText.value) {
+        filtered = filtered.filter(p => Object.values(p)
+        .join(" ").toLowerCase()
+        .includes(searchText.value.toLowerCase()));     
+    }
 
     // Add parks to the results container
     if (filtered.length > 0) {
@@ -97,6 +102,7 @@ function onContent() {
     // Event listeners for filtering and rendering parks
     parkTypeSelect.addEventListener("change", renderParks);
     parkLocationSelect.addEventListener("change", renderParks);
+    searchText.addEventListener("keyup", renderParks);
 
     const clearFormButton = document.getElementById("clearFormButton");
     clearFormButton.addEventListener("click", clearForm);
